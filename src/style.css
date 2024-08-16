@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply relative antialiased;
+
+    &::-webkit-scrollbar {
+      width: 12px;
+      @apply bg-gray-200 dark:bg-gray-950;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: linear-gradient(#5d5266ce, #5e6b6abb, #181b33cb);
+      border-radius: 4px;
+    }
+  }
+}
+
+body {
+  @apply object-contain;
+  background-image: url(./assets/body-bg2.jpg);
+}
